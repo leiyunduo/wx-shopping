@@ -1,0 +1,101 @@
+/* components/settlement/settlement.wxss */
+.calc-bar {
+    width: 724rpx;
+}
+
+.calc-bar .icon-man {
+    position: absolute;
+    left: 33rpx;
+    bottom: 0;
+    width: 129rpx;
+    height: 147rpx;
+}
+
+.calc-bar .number {
+    position: relative;
+    border-radius: 20rpx;
+    height: 119rpx;
+    background: #e94215;
+    width: 724rpx;
+}
+
+.calc-bar .number-box {
+    position: relative;
+    padding-left: 190rpx;
+    width: 348rpx;
+    height: 119rpx;
+    background: #1b1b1b;
+    border-radius: 20rpx 0 0 20rpx;
+}
+
+.calc-bar .number .price {
+    margin-top: 21rpx;
+    color: #fff;
+    font-size: 36rpx;
+}
+
+.calc-bar .number .remark {
+    margin: 23rpx 0 0 11rpx;
+    color: #dedede;
+    font-size: 26rpx;
+}
+
+.calc-bar .number .tips {
+    margin: 22rpx 0 0 5rpx;
+    color: #dedede;
+    font-size: 26rpx;
+}
+
+.calc-bar .price-top {
+    display: flex;
+    align-items: center;
+}
+
+.calc-bar .number .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 186rpx;
+    height: 119rpx;
+    border-radius: 0 20rpx 20rpx 0;
+    color: #fff;
+    font-size: 36rpx;
+    line-height: 119rpx;
+    text-indent: 50rpx;
+    background: #eb552d;
+}
+@keyframes cartopen {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+@keyframes cartclose {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.carticon {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: scale(.75);
+  transform: scale(.75);
+}
+.cartopen {
+  animation: cartopen .5s steps(18) 1;
+}
+.cartclose {
+  animation: cartclose .5s steps(18) 1;
+}
+

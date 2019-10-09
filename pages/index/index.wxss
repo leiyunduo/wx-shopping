@@ -1,0 +1,62 @@
+/**index.wxss**/
+
+.goods .list-wrap {
+  position: absolute;
+  top: 0;
+  left: 195rpx;
+  right: 0;
+  bottom: 0;
+}
+.goods .list-wrap .goods-item:last-child {
+  padding-bottom: 160rpx;
+}
+.goods .list {
+  padding-left: 12rpx;
+  padding-right: 35rpx;
+  background: #fff;
+}
+.goods .goods-item {
+  margin-right: 14rpx;
+}
+.goods .goods-item:nth-child(3n) {
+  margin-right: 0;
+}
+.goods .goods-item:nth-child(odd) {
+  float: left;
+}
+.goods .goods-item:nth-child(even) {
+  float: right;
+}
+.goods .goods-item .name{
+  text-align:center;
+  font-weight: 600;
+}
+.goods .goods-item .price{
+  font-size:28rpx;
+  font-weight: 600;
+}
+.calc-car{
+  position: fixed;
+  left: 13rpx;
+  bottom: 20rpx;
+  z-index: 999;
+}
+.goods .list {
+  padding-left: 12rpx;
+  padding-right: 35rpx;
+  background: #fff;
+}
+.goods .list:last-of-type {
+  margin-bottom: 1000rpx;
+}
+.goods .list .head {
+  height: 76rpx;
+  color: #333;
+  font-size: 30rpx;
+  line-height: 76rpx;
+}
+.goods .list .head .logo-red {
+  vertical-align: middle;
+  margin-left: 10rpx;
+  margin-right: 15rpx;
+}

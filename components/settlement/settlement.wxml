@@ -1,0 +1,18 @@
+<!--components/settlement/settlement.wxml-->
+<view class="gobal-bar">
+  <view class="calc-bar">
+    <view class="number">
+      <view class="number-box">
+        <view id="cartBtn" class="carticon {{cartShow}}" style="background: url(/assets/image/1.png) 0 0 no-repeat;background-size: auto 200%;">
+        </view>
+        <!-- 购物车功能 -->
+        <view class="price-top">
+          <view class="price">￥{{goodsPrice}}</view>
+          <view class="remark">含￥{{sendprice}}配送费</view>
+        </view>
+        <view class="tips">{{sub_distribution_fee}}元以上免配送费。</view>
+      </view>
+      <view class="btn">结算</view>
+    </view>
+  </view>
+</view>

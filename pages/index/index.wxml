@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="goods">
+  <view class="list-wrap">
+    <view class="list">
+      <index-goods class="goods-item" wx:for="{{hotList}}" wx:key="{{item.id}}" goods="{{item}}" data-outerindex="{{index}}" bindgoodscalc="goodsCalc" goodscalc="{{orderGoodsList}}" ></index-goods>
+    </view>
+  </view>
+  <view class="settlement">
+    <settlement class="calc-car" bind:myevent='onMyevent' cartShow="{{cartShow}}"></settlement>
+  </view>
+</view>
